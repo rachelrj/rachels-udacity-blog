@@ -1,0 +1,92 @@
+@import "sidebar-cards.css";
+@import "home-cards.css";
+@import "author-info.css";
+@import "social-share.css";
+
+body {
+  display: grid;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+header {
+  grid-area: header;
+  height: 150px;
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+#sidebar {
+  grid-area: sidebar;
+  margin-left: 25px;
+}
+#home, #blog {
+  grid-area: home;
+  font-size: 24px;
+}
+footer {
+  grid-area: footer;
+  height: 150px;
+  background-color: grey;
+}
+h1 {
+  font-size: 36px;
+  color: darkblue;
+}
+h2 {
+  font-size: 30px;
+  color: #0096FF;
+
+}
+h3 {
+  font-size: 26px;
+  color: #89CFF0;
+}
+h4 {
+  font-size: 24px;
+}
+#main-header {
+  font-family: "Aclonica", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+}
+#blog-header {
+  margin-top: 25px;
+  width: 100%;
+}
+#home-page-icon {
+  width: 100px;
+  height: 100px;
+}
+#take-care {
+  width: 100%;
+}
+@media only screen and (min-width: 0px) {
+  body {
+    grid-template-areas: 
+    "header"
+    "home"
+    "sidebar"
+    "footer";
+  }
+  #sidebar, #home {
+    text-align: center;
+  }
+  #home p {
+    text-align: left;
+  }
+  #home, #blog {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  body {
+    grid-template-areas: 
+    "header header header"
+    "sidebar home home"
+    "footer footer footer";
+  }
+  #sidebar {
+    border-right: black solid;
+  }
+}

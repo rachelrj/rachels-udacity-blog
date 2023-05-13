@@ -1,0 +1,36 @@
+#sidebar-cards {
+	display: flex;
+	flex-direction: column;
+}
+.sidebar-card {
+	width:280px;
+	padding: 10px 20px 10px 20px;
+	color: black;
+	text-decoration: none;
+	margin-bottom: 50px;
+}
+.sidebar-card button {
+	display: block;
+	background-color: teal;
+	width: 150px;
+	font-size: 18px;
+	height: 50px;
+	color: white;
+	cursor: pointer;
+	border: none;
+	margin: auto;
+	margin-top: 20px;
+}
+.sidebar-card img {
+	margin: auto;
+	width: 250px;
+}
+.sidebar-card button:hover, .sidebar-card button:focus {
+  background-color: #016064;
+}
+
+@media only screen and (max-width: 700px) {
+	#sidebar-cards > * {
+    	margin: auto;
+  	}
+}
